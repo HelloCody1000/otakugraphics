@@ -5,6 +5,5 @@ def hash_password(plain_text_password):
     salt = bcrypt.gensalt()
 
     # Hash the password
-    #comment test
     hashed_password = bcrypt.hashpw(plain_text_password.encode('utf-8'), salt)
     return hashed_password
