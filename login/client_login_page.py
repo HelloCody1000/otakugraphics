@@ -1,7 +1,7 @@
 import boto3
 
 # Assuming authenticate_user and store_user_info functions are defined in their respective files
-from authenticate_user import authenticate_user
+from login.authenticate_user import authenticate_user
 from store_user_info import store_user_info
 
 def is_valid_username_password(username, password):
