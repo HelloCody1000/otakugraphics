@@ -1,5 +1,6 @@
 import boto3
 import uuid
+import time  # Import the time module
 from botocore.exceptions import ClientError
 
 # Assuming you have a function to generate a secure token
@@ -18,7 +19,7 @@ def send_password_reset_email(email):
         Item={
             'email': email,
             'reset_token': reset_token,
-            'expiration_time': int(time.time()) + 3600 # 1 hour from now
+            'expiration_time': int(time.time()) + 3600  # 1 hour from now
         }
     )
     
