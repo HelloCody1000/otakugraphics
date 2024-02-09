@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+button:hover {
+    background-color: #cc7a00;
+}
+/* Additional styles for form visibility toggling */
+#forgotPasswordForm, #createUserForm {
+    display: none; /* Initially hidden */
+}
+
+/* Style adjustments for active forms */
+.active-form {
+    display: block !important; /* Show the form when it's active */
+}
+
+/* You might want to add some margin-top for buttons inside forms */
+form button {
+    margin-top: 10px;
+}
